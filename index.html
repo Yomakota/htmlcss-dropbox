@@ -103,17 +103,24 @@
                     <h2>Trova il piano Dropbox Business che fa per te</h2>
                 </div>
                 <div class="radio-section">
-                    <div class="radio checked"></div>
-                    <span>Fatturazione mensile</span>
-                    <div class="radio no-checked"></div>
-                    <span>Fatturazione annuale</span>
+                    <form>
+                        <span>
+                            <input type="radio" name="radio-plans" checked>
+                            <label for="month">Fatturazione mensile</label>
+                        </span>
+                        
+                        <span class="year">
+                            <input type="radio" name="radio-plans">
+                            <label for="year">Fatturazione annuale</label>
+                        </span>
+                    </form>
                 </div>
                 <div class="vertical-cards clearfix">
 
                     <div class="card float-sx pd-bottom">
                         <div class="card-opt"><i class="far fa-user"></i> Singolo</div>
 
-                        <div class="card-top">
+                        <div class="card-top clearfix">
                             <h3 class="title-card-top">Professional</h3>
                             <div class="price-card">19,99€</div>
                             <div class="monthly">/mese</div>
@@ -133,7 +140,7 @@
                             <hr class="dash">
                         </div>
 
-                        <div class="card-bottom">
+                        <div class="card-bottom clearfix">
                             <h4>Punti salienti del piano</h4>
                             <ul>
                                 <li> <i class="fas fa-check"></i>Invia file fino a 100 GB con Dropbox Transfert</li>
