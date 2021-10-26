@@ -171,12 +171,52 @@ header a {
     margin-bottom: 1.5em;
 }
 
-.radio {
+.radio-section input[type="radio"] {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 2px solid #E4E4E6;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.radio-section input[type="radio"]:checked {
+    opacity: 0;
+}
+
+.radio-section label {
+    position: relative;
+    margin-right: 1em;
+}
+
+.radio-section input:checked + label:before {
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-left: -1.5em;
+    content: "";
+    width: 1em;
+    height: 1em;
+    border: 3px solid #136DFF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.radio-section::not(:checked) + label:before {
+    display: none;
+}
+
+
+
+
+/* .radio {
     width: 1em;
     height: 1em;
     border-radius: 50%;
     border: 1px solid #E4E4E6;
-}
+} */
 
 .year {
     margin-left: 1em;
