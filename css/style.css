@@ -208,20 +208,6 @@ header a {
     display: none;
 }
 
-
-
-
-/* .radio {
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    border: 1px solid #E4E4E6;
-} */
-
-.year {
-    margin-left: 1em;
-}
-
 .card {
     width: calc(100% / 3 - 2em);
     padding: 0.5em;
