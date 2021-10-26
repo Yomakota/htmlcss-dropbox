@@ -23,7 +23,6 @@ a {
 a:hover,
 a:active,
 a:focus {
-  text-decoration: underline;
   cursor: pointer;  
 }
 
@@ -83,6 +82,13 @@ li i {
     background-color: #FFFFFF;
     width: 100%;
     line-height: 5em;
+}
+
+.navbar li:hover, 
+.navbar li:active, 
+.navbar li:focus {
+    border-bottom: 3px solid black;
+    text-decoration: none;
 }
 
 header a {
@@ -481,6 +487,7 @@ header a {
 .question {
     border: 1px solid #DCDCDE; border-width: 1px 0;
     font-weight: bold;
+    width:80%;
 }
 
 .answer {
@@ -494,6 +501,12 @@ footer {
     margin-top:5em;
     padding: 3em 6em;
     background-color: #000000;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+    text-decoration: underline;
 }
 
 .ftr-bottom {
