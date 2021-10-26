@@ -512,12 +512,47 @@ header a {
 .question {
     border: 1px solid #DCDCDE; border-width: 1px 0;
     font-weight: bold;
-    width:80%;
+    width:100%;
+    position: relative;
 }
 
-.answer {
-    float: right;
+.question-link {
+    color: black;
 }
+.question-link .fa.fa-angle-up {
+    position: absolute;
+    top: 39%;
+    right: 0;
+}
+
+.question-link .fa.fa-angle-down {
+    display: none;
+    position: absolute;
+    top: 14%;
+    right: 0;
+}
+
+.question-item:hover .question-link .fa.fa-angle-up {
+    display: none;
+}
+
+.question-item:hover .question-link .fa.fa-angle-down {
+    display: block;
+}
+
+.answer p {
+    display: none;
+    line-height: normal;
+    color: grey;
+    font-size: 0.8em;
+    margin-bottom: 2.5em;
+    width: 80%;
+}
+
+.question-item:hover p {
+    display: block;
+}
+
 /* section-faq */
 
 /* section-footer */
@@ -573,5 +608,6 @@ footer a:focus {
 
 /* section-footer */
   
+
 
 
