@@ -52,7 +52,7 @@ li i {
 .btn {
   display: inline-block;
   line-height: 2em;
-  padding: 0.2em 1.3em;
+  padding: 0 2em;
 }
 
 .btn-blue{
@@ -81,7 +81,7 @@ li i {
     z-index: 2;
     background-color: #FFFFFF;
     width: 100%;
-    line-height: 5em;
+    line-height: 6em;
 }
 
 .navbar li:hover, 
@@ -96,16 +96,40 @@ header a {
     color: black;
 }
 
+.header-right {
+    padding-right: 0.5em;
+}
+
 .menu-inline li {
     display: inline-block;
 }
 
-.menu-inline .btn-blue {
-     margin-right: 1em;
-}
-
 .logo {
     vertical-align: middle;
+}
+
+.drop-content {
+  display: none;
+  background-color: #FFFFFF;
+  position: absolute;
+  margin-top: 0.2em;
+  line-height: 3em;
+}
+
+.dropmenu:hover .drop-content {
+    display: block;
+}
+
+.drop-content li, .drop-content a {
+    display:block;
+}
+
+.drop-content:hover li {
+    border: none;
+}
+
+.drop-content li:hover a {
+    background-color:rgba(253, 249, 249, 0.822);
 }
 
 /* jumbo */
@@ -304,7 +328,8 @@ header a {
 }
 
 .row-btn a.btn-blue {
-    padding: 0.5em 3em;
+    line-height: 1.5em;
+    padding: 0.3em 3em;
 }
  
 /* section-plans */
