@@ -432,6 +432,8 @@ header a {
     width: 40%;
     background-color: #E5E5E5;
     padding: 3em 3em;
+    min-height: 30%;
+    overflow: scroll;
 }
 
 .box.center img {
